@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+    <title> Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="loginstyle.css">  <link type="text/css" rel="stylesheet" href="normalize.css" /> 
+    <link href="style.css" rel="stylesheet"/>
+</head>
+    <body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <!-- <div class="radio">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="DONOR" value="DONOR">Donor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="DONOR" value="DONEE">Donee<br><br>
+        </div> -->
+           
+            <form>
+                    
+            <p>UserName</p>
+            <input type="text" name="username" placeholder="Enter Usernname">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password"><br><br>
+            <input type="submit" name="" value="Login">
+          
+						
+            </form>
+            <br><br><button type="submit" name="" value="SignUp">SignUp</button>
+        
+        </div>
+    
+<?php
+
+ include("config.php");  
+
+     if(isset($_POST['userlogin'])) {
+     $user = $_POST['username'];
+     $psw = $_POST['password'];
+     
+                 $result = mysqli_query($mysqli,"SELECT * FROM signupusers WHERE username='$user' and password='$psw'");
+                
+                 if($row = mysqli_fetch_array($result))
+                 {
+                     // session.start();
+                     echo "done";
+                     header("location:appointment.html");
+                 }
+                 else{
+                     echo "invalid login";
+                 }
+
+                 }
+?>
+
+
+
+    </body>
+</html>

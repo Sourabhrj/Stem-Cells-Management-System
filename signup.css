@@ -1,0 +1,117 @@
+secondary-color#125688
+
+body {
+  background: #fafafa;
+  color: secondary-color;
+  font-family: Montserrat;
+}
+
+.landing {
+  margin: 30px auto;
+}
+
+.btn.btn-flat {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.app-title {
+  font-family: 'Oleo Script';
+  font-size: 42px;
+  color: secondary-color !important;
+}
+
+.login-box,
+.signup-box {
+  background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.signin,
+.signup {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.signup h2 {
+  color: #a5a7aa;
+  font-size: 1.2em;
+}
+
+.signin .btn.btn-fb,
+.signup .btn.btn-fb {
+  background-color: #4090db;
+  font-size: .8em;
+}
+
+.signin .btn.btn-fb:hover,
+.signup .btn.btn-fb:hover {
+  background-color: #2d6599;
+}
+
+.signin .btn.btn-signup,
+.signup .btn.btn-signup {
+  background-color: secondary-color;
+}
+
+
+
+
+
+
+
+
+
+<div class="container landing">
+<div class="row">
+<div class="col s12 m6 offset-m3">
+  <div class="row">
+    <div class="signup-box">
+      <h1 class="app-title">Sign UP</h1>
+      <form class="signin hide animated bounceIn">
+        <div class="section">
+          <!-- <a class="btn btn-fb hide-on-small-only">Log in with Facebook</a>
+          <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook-official"></i> Log in</a> -->
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <input type="text" name="username" placeholder="Username" />
+          <input type="password" name="password" placeholder="Password" />
+          <button class="btn waves-effect waves-light btn-signup" type="submit">Log in</button>
+        </div>
+      </form>
+      <form class="signup animated bounceIn" action="signup.php" method="post">
+        <!-- <h2>Sign up to watch your friends pictures ... </h2> -->
+        <div class="section">
+          <!-- <a class="btn btn-fb hide-on-small-only">Sign in with Facebook</a>
+          <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook-official"></i> Sign in </a> -->
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <input type="text" name="h_name" placeholder="Hospital Namr" />
+          <input type="text" name="h_id" placeholder="Hospital ID" />
+          <input type="text" name="phone_number" placeholder="Contact Number" />
+          <input type="password" name="h_location" placeholder="Hospital Location" />
+          <input type="text" name="DONOR_ID" placeholder="Donor ID" />
+          <input type="password" name="DONEE_ID" placeholder="Donee ID" />
+
+          <button class="btn waves-effect waves-light btn-signup" name="h_register" type="submit">Sign up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="login-box sign-in-box">
+      Already have account? <a onclick="toggleSignup()" href="#"> Sign in</a>
+    </div> 
+    <div class="login-box sign-up-box hide">
+      Don't have an account? <a onclick="toggleSignup()" href="#"> Sign up</a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>

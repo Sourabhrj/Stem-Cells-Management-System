@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: rgba(74, 102, 179, 0.719);
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-nav {
+  position: relative;
+  background-color: rgba(104, 127, 161, 0.781);
+  background-color:rgba(56, 129, 169, 0.781);
+  background-color:rgba(53, 129, 157, 0.781);
+  padding: 7px;
+}
+.header-nav ul {
+  list-style: none;
+  overflow: hidden;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  position: relative;
+  padding-bottom: 2px;
+}
+.header-nav ul li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+.header-nav ul li:nth-child(1).active ~ .marker {
+  left: 0%;
+}
+.header-nav ul li:nth-child(1):hover ~ .marker {
+  left: 0% !important;
+}
+.header-nav ul li:nth-child(2).active ~ .marker {
+  left: 20%;
+}
+.header-nav ul li:nth-child(2):hover ~ .marker {
+  left: 20% !important;
+}
+.header-nav ul li:nth-child(3).active ~ .marker {
+  left: 40%;
+}
+.header-nav ul li:nth-child(3):hover ~ .marker {
+  left: 40% !important;
+}
+.header-nav ul li:nth-child(4).active ~ .marker {
+  left: 60%;
+}
+.header-nav ul li:nth-child(4):hover ~ .marker {
+  left: 60% !important;
+}
+.header-nav ul li:nth-child(5).active ~ .marker {
+  left: 80%;
+}
+.header-nav ul li:nth-child(5):hover ~ .marker {
+  left: 80% !important;
+}
+.header-nav ul li a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 21px 30px 16px 22px;
+  text-transform: uppercase;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header-nav .marker {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  height: 2px;
+  width: 20%;
+  background-color: #ffffff;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+

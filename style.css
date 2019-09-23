@@ -1,0 +1,47 @@
+body{
+	background-image: url("../assets/img8.jpg");
+	height: 400px;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+.stemcells-header{
+    height:60px;
+    background:red;
+}
+
+.login-button-cover{
+    margin:24px;
+    text-align: center;
+
+}
+
+.login-popup{
+    width:50%;
+    background: white;
+    padding:20px;
+    margin:auto;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
